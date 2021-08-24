@@ -1,6 +1,6 @@
 import React from "react";
-import MobileFilter from "./MobileFilter";
-import DesktopFilter from "./DesktopFilter";
+//import MobileFilter from "./MobileFilter";
+//import DesktopFilter from "./DesktopFilter";
 interface Props {
   products: [];
   isLoading: boolean;
@@ -9,10 +9,14 @@ interface Props {
 const Filter: React.FC<Props> = ({ products, isLoading }) => {
   return (
     <>
-      <MobileFilter products={products} isLoading={isLoading} />
-      <DesktopFilter products={products} isLoading={isLoading} />
+      
     </>
   );
 };
 
 export default Filter;
+
+// saque el filter del return 
+
+// <MobileFilter products={products} isLoading={isLoading} />
+//<DesktopFilter products={products} isLoading={isLoading} />

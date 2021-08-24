@@ -58,10 +58,11 @@ const Shop: React.FC<StoreProps> = () => {
     (state: StoreProps) => state.storeProduct.product
   );
 
+
   return (
     <Container>
       <Parallax>
-        <h3>Shop</h3>
+        <h3>Tienda</h3>
       </Parallax>
       <Content>
         <Filter isLoading={isLoading} products={products} />
