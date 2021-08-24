@@ -7,6 +7,7 @@ import ProductList from "./ProductList/ProductList";
 import Filter from "./Filter/Filter";
 import { IFilter } from "../../store/searchFilter/types";
 import Filters from "./Filters/Filters";
+import { isBreakOrContinueStatement } from "typescript";
 interface StoreProps {
   storeProduct: {
     product: [];
@@ -65,8 +66,8 @@ const Shop: React.FC<StoreProps> = () => {
         <h3>Tienda</h3>
       </Parallax>
       <Content>
-        <Filter isLoading={isLoading} products={products} />
-        <div style={{ display: "grid" }}>
+          <Filter isLoading={isLoading} products={products} />
+        <div >
           <Filters activeFilters={filters} tags={tagSelector} />
           <ProductList isLoading={isLoading} products={products} />
         </div>

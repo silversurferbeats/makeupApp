@@ -7,7 +7,7 @@ const Brand: React.FC = () => {
   return (
     <Container>
       <Link to="/">
-        <Image src={image} />
+        
         <Text>Make Up</Text>
       </Link>
     </Container>
@@ -15,3 +15,6 @@ const Brand: React.FC = () => {
 };
 
 export default Brand;
+
+// esta imagen la saque de al lado del <text> makeUp dentro de <link>
+// <Image src={image} />

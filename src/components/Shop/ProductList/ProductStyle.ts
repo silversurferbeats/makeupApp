@@ -3,6 +3,8 @@ import { device, fonts } from "../../utils";
 export const Container = styled.div`
   margin: 0 1em;
   overflow: hidden;
+  
+  
 
   h3 {
     text-align: center;
